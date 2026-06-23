@@ -79,7 +79,7 @@ with st.expander("How to get the auth token"):
     )
 
 meeting_url = st.text_input("tl;dv meeting URL")
-auth_token = st.text_area("Authorization token", type="password", height=100)
+auth_token = st.text_input("Authorization token", type="password")
 
 if st.button("Download meeting", type="primary"):
     if not meeting_url or not auth_token:
